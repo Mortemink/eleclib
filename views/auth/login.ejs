@@ -1,0 +1,19 @@
+<%- include ../inc/header.ejs%>
+
+
+    <div class="login__bg">
+        <div class="login__block">
+            <form action="/login" method="POST">
+        <% if (messages.error) { %>
+        <%= messages.error %>
+        <% } %>
+                    <input class="login-form" type="login" id="login" name="login" placeholder="Введите логин" required>
+                    
+                    <input class="login-form" type="password" id="password" name="password" placeholder="Введите пароль" required>
+                    <input class="login-form" type="submit" name="enter" value="Войти">
+            </form>
+            <a href="/register" class="login-reg">Зарегистрироваться</a>
+        </div>
+    </div>
+
+    <%- include ../inc/footer.ejs%>

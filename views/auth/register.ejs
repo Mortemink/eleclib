@@ -1,0 +1,14 @@
+<%- include ../inc/header.ejs%>
+
+    <div class="register__bg">
+        <div class="register__block">
+            <form action="/register" method="POST">
+                    <input class="register-form" type="login" id="login" name="login" placeholder="Введите логин" required>
+                    <input class="register-form" type="email" id="email" name="email" placeholder="Введите почту" required>
+                    <input class="register-form" type="password" id="password" name="password" placeholder="Введите пароль" required>
+                    <input class="register-form" type="submit" name="enter" value="Зарегистрироваться">
+            </form>
+        </div>
+    </div>
+
+    <%- include ../inc/footer.ejs%>

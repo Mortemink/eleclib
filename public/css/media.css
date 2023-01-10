@@ -1,0 +1,508 @@
+@media(max-width: 850px){
+    .header__menu-btn{
+        display: block;
+    }
+    .header__menu > ul{
+        display: none;
+        position: absolute;
+        z-index: 2;
+        top: 120px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        background-color: #fff;
+        border-bottom: 5px solid #222;
+    }
+    .header__menu li{
+        display: block;
+        text-align: center;
+    }
+    .header__menu li + li,
+    .header__drop-down.drop-down+.header__link-blog,
+    .header__drop-down.drop-down{
+        margin-left: 0px;
+    }
+    .header__menu a{
+    color: #000;
+    padding: 17px 12px 13px 12px;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: none;
+    display: block;
+    transition: .3s;
+    }
+    .header__menu li + li a {
+    border-top: 1px solid #e8ebf1;
+}
+    .header__drop-down.drop-down:hover .drop-down__list {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .3s;
+}
+    .header__drop-down.drop-down .drop-down__list{
+        background-color: #F8F8F8;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: all .3s;
+        position: static;
+        width: 100%;
+        border-bottom: none;
+        padding: 0px;
+    }
+    .header__drop-down.drop-down .drop-down__list.active{
+        height: auto;
+        overflow: hidden;
+        opacity: 1;
+        transition: all .3s;
+    }
+    .header__drop-down .drop-down:hover > a {
+        color: #000;
+        border-top: 1px solid #ff8000;
+        background-color: #fff;
+        transition: .0s;
+    }
+
+    @media (max-width: 891px){
+        .popular__title,
+        .new__title,
+        .mystic__title,
+        .adventure__title,
+        .fantastic__title,
+        .fantasy__title,
+        .hot__title,
+        .bestsellers__title,
+        .top__title{
+            font-size: 15px;
+            padding: 25px 253px 6px 225px;
+            margin-left: 110px;
+        }
+        .popular__inner,
+        .new__inner,
+        .mystic__inner,
+        .adventure__inner,
+        .fantastic__inner,
+        .fantasy__inner,
+        .hot__inner,
+        .bestsellers__inner,
+        .top__inner{
+            left: 27px;
+        }
+    }
+    
+
+    @media (max-width: 810px){
+        .popular__title,
+        .new__title,
+        .mystic__title,
+        .adventure__title,
+        .fantastic__title,
+        .fantasy__title,
+        .hot__title,
+        .bestsellers__title,
+        .top__title{
+            font-size: 15px;
+            padding: 25px 224px 6px 224px;
+            margin-left: 60px;
+        }
+        .popular__inner,
+        .new__inner,
+        .mystic__inner,
+        .adventure__inner,
+        .fantastic__inner,
+        .fantasy__inner,
+        .hot__inner,
+        .bestsellers__inner,
+        .top__inner{
+            left: 55px;
+        }
+    }
+
+    @media (max-width: 701px){
+        .popular__title,
+        .new__title,
+        .mystic__title,
+        .adventure__title,
+        .fantastic__title,
+        .fantasy__title,
+        .hot__title,
+        .bestsellers__title,
+        .top__title{
+            font-size: 14px;
+            padding: 25px 208px 6px 208px;
+            margin-left: 40px;
+        }
+        .popular__inner,
+        .new__inner,
+        .mystic__inner,
+        .adventure__inner,
+        .fantastic__inner,
+        .fantasy__inner,
+        .hot__inner,
+        .bestsellers__inner,
+        .top__inner{
+            left: 38px;
+        }
+    }
+
+    @media (max-width: 651px){
+        .popular__title,
+        .new__title,
+        .mystic__title,
+        .adventure__title,
+        .fantastic__title,
+        .fantasy__title,
+        .hot__title,
+        .bestsellers__title,
+        .top__title{
+            font-size: 14px;
+            padding: 25px 200px 6px 200px;
+            margin-left: 30px;
+        }
+        .popular__inner,
+        .new__inner,
+        .mystic__inner,
+        .adventure__inner,
+        .fantastic__inner,
+        .fantasy__inner,
+        .hot__inner,
+        .bestsellers__inner,
+        .top__inner{
+            left: 29px;
+        }
+    }
+
+    @media (max-width: 623px){
+        .popular__title,
+        .new__title,
+        .mystic__title,
+        .adventure__title,
+        .fantastic__title,
+        .fantasy__title,
+        .hot__title,
+        .bestsellers__title,
+        .top__title{
+            font-size: 14px;
+            padding: 25px 190px 6px 190px;
+            margin-left: 55px;
+        }
+    }
+
+    @media (max-width: 600px){
+        .popular__title,
+        .new__title,
+        .mystic__title,
+        .adventure__title,
+        .fantastic__title,
+        .fantasy__title,
+        .hot__title,
+        .bestsellers__title,
+        .top__title{
+            font-size: 13px;
+            padding: 25px 170px 6px 170px;
+            margin-left: 50px;
+        }
+        .popular__inner,
+        .new__inner,
+        .mystic__inner,
+        .adventure__inner,
+        .fantastic__inner,
+        .fantasy__inner,
+        .hot__inner,
+        .bestsellers__inner,
+        .top__inner{
+            left: 20px;
+        }
+    }
+
+    @media (max-width: 544px){
+        .popular__title,
+        .new__title,
+        .mystic__title,
+        .adventure__title,
+        .fantastic__title,
+        .fantasy__title,
+        .hot__title,
+        .bestsellers__title,
+        .top__title{
+            font-size: 12px;
+            padding: 25px 150px 6px 150px;
+            margin-left: 50px;
+        }
+        .popular__inner,
+        .new__inner,
+        .mystic__inner,
+        .adventure__inner,
+        .fantastic__inner,
+        .fantasy__inner,
+        .hot__inner,
+        .bestsellers__inner,
+        .top__inner{
+            left: 60px;
+        }
+        .header__logo a, .footer__logo a{
+            margin-left: -90px;
+        }
+    }
+
+    @media (max-width: 493px){
+        .popular__title,
+        .new__title,
+        .mystic__title,
+        .adventure__title,
+        .fantastic__title,
+        .fantasy__title,
+        .hot__title,
+        .bestsellers__title,
+        .top__title{
+            font-size: 12px;
+            padding: 25px 125px 6px 130px;
+            margin-left: 50px;
+        }
+        .popular__inner,
+        .new__inner,
+        .mystic__inner,
+        .adventure__inner,
+        .fantastic__inner,
+        .fantasy__inner,
+        .hot__inner,
+        .bestsellers__inner,
+        .top__inner{
+            left: 50px;
+        }
+    }
+
+    @media (max-width: 448px){
+        .popular__title,
+        .new__title,
+        .mystic__title,
+        .adventure__title,
+        .fantastic__title,
+        .fantasy__title,
+        .hot__title,
+        .bestsellers__title,
+        .top__title{
+            font-size: 12px;
+            padding: 25px 115px 6px 100px;
+            margin-left: 40px;
+        }
+        .popular__inner,
+        .new__inner,
+        .mystic__inner,
+        .adventure__inner,
+        .fantastic__inner,
+        .fantasy__inner,
+        .hot__inner,
+        .bestsellers__inner,
+        .top__inner{
+            left: 30px;
+        }
+        .slick-next{
+            right: 50px;
+        }
+        .slick-prev{
+            right: 80px;
+        }
+    }
+
+    @media (max-width: 405px){
+        .popular__title,
+        .new__title,
+        .mystic__title,
+        .adventure__title,
+        .fantastic__title,
+        .fantasy__title,
+        .hot__title,
+        .bestsellers__title,
+        .top__title{
+            font-size: 12px;
+            padding: 25px 100px 6px 105px;
+            margin-left: 30px;
+        }
+        .popular__inner,
+        .new__inner,
+        .mystic__inner,
+        .adventure__inner,
+        .fantastic__inner,
+        .fantasy__inner,
+        .hot__inner,
+        .bestsellers__inner,
+        .top__inner{
+            left: 130px;
+        }
+        .slick-next{
+            right: 145px;
+        }
+        .slick-prev{
+            right: 180px;
+        }
+        .header__logo a, .footer__logo a{
+            margin-left: -180px;
+        }
+    }
+
+    @media (max-width: 377px){
+        .popular__title,
+        .new__title,
+        .mystic__title,
+        .adventure__title,
+        .fantastic__title,
+        .fantasy__title,
+        .hot__title,
+        .bestsellers__title,
+        .top__title{
+            font-size: 12px;
+            padding: 25px 90px 6px 95px;
+            margin-left: 20px;
+        }
+        .popular__inner,
+        .new__inner,
+        .mystic__inner,
+        .adventure__inner,
+        .fantastic__inner,
+        .fantasy__inner,
+        .hot__inner,
+        .bestsellers__inner,
+        .top__inner{
+            left: 100px;
+        }
+        .slick-next{
+            right: 125px;
+        }
+        .slick-prev{
+            right: 160px;
+        }
+      
+    @media (max-width: 357px){
+        .popular__title,
+        .new__title,
+        .mystic__title,
+        .adventure__title,
+        .fantastic__title,
+        .fantasy__title,
+        .hot__title,
+        .bestsellers__title,
+        .top__title{
+            font-size: 12px;
+            padding: 25px 80px 6px 85px;
+            margin-left: 30px;
+        }
+        .popular__inner,
+        .new__inner,
+        .mystic__inner,
+        .adventure__inner,
+        .fantastic__inner,
+        .fantasy__inner,
+        .hot__inner,
+        .bestsellers__inner,
+        .top__inner{
+            left: 105px;
+        }
+        .slick-next{
+            right: 115px;
+        }
+        .slick-prev{
+            right: 150px;
+        }
+    }
+
+    @media (max-width: 340px){
+        .popular__title,
+        .new__title,
+        .mystic__title,
+        .adventure__title,
+        .fantastic__title,
+        .fantasy__title,
+        .hot__title,
+        .bestsellers__title,
+        .top__title{
+            font-size: 12px;
+            padding: 25px 70px 6px 80px;
+            margin-left: 10px;
+        }
+        .popular__inner,
+        .new__inner,
+        .mystic__inner,
+        .adventure__inner,
+        .fantastic__inner,
+        .fantasy__inner,
+        .hot__inner,
+        .bestsellers__inner,
+        .top__inner{
+            left: 85px;
+        }
+        .slick-next{
+            right: 90px;
+        }
+        .slick-prev{
+            right: 120px;
+        }
+    }
+
+    @media (max-width: 320px){
+        .popular__title,
+        .new__title,
+        .mystic__title,
+        .adventure__title,
+        .fantastic__title,
+        .fantasy__title,
+        .hot__title,
+        .bestsellers__title,
+        .top__title{
+            font-size: 12px;
+            padding: 25px 50px 6px 60px;
+            margin-left: 5px;
+        }
+        .popular__inner,
+        .new__inner,
+        .mystic__inner,
+        .adventure__inner,
+        .fantastic__inner,
+        .fantasy__inner,
+        .hot__inner,
+        .bestsellers__inner,
+        .top__inner{
+            left: 55px;
+        }
+        .slick-next{
+            right: 55px;
+        }
+        .slick-prev{
+            right: 80px;
+        }
+    }
+
+    @media (max-width: 420px){
+        .slider__item-title {
+            font-size: 48px;
+            width: 278px;
+            margin-left: 10px;
+        }
+    }
+
+    @media (max-width: 376px){
+        .footer__inner{
+            flex-wrap: wrap;
+        }
+        .footer__item-social,
+        .footer__item-contact,
+        .footer__item-list,
+        .footer__item-content{
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+    
+
+}
+
+
+
+
+@media (min-width: 960px){
+    .header__menu + ul{
+        display: block !important ;
+    }
+}
+}
