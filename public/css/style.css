@@ -816,7 +816,7 @@ li {
 .profile_block {
     position: relative;
     border-radius: 10px;
-    border: 2px solid #ff8000;
+    border: 2px solid #ff9c39;
     background-color: rgb(243, 243, 243);
     width: 770px;
     height: 740px;
@@ -846,8 +846,8 @@ li {
 }
 
 .name {
-    margin-top: 5px;
     position: relative;
+    margin-top: 5px;
     width: auto;
     height: 40px;
     display: flex;
@@ -866,7 +866,7 @@ li {
 }
 
 .hr_in_profile{
-    background-color: #ff8000;
+    background-color: #ff9c39;
     position: relative;
     width: 80%;
     border: none;
@@ -894,3 +894,5 @@ li {
 .exit_button:hover{
     color: #ff8000;
 }
+
+
