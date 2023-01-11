@@ -1,0 +1,33 @@
+<%- include inc/header.ejs%>
+    <main class="main_block">
+        <div class="profile_block">
+            <div class="user_info">
+                <div class="profile_image">
+                </div>
+                <div class="name" style=" display: flex; flex-direction: row;">
+                    <p>White1ynx</p>
+                </div>
+            </div>
+            <hr class="hr_in_profile">
+            <div class="user_info_add">
+                <div class="namming" align="left">
+                    <p>Email</p>
+                    <p>Phone</p>
+                    <p>Name</p>
+                    <p>Nickname</p>
+                    <p>Subscription</p>
+                </div>
+                <div class="namming_info" align="right">
+                    <p>White1ynx@gmail.com</p>
+                    <p>874583475</p>
+                    <p>Даниил Елистратов</p>
+                    <p>White1ynx</p>
+                    <p>Prime</p>
+                </div>
+            </div>
+            <form action="/logout?_method=DELETE" method="POST" id="submit__form"><a
+                    onclick="document.getElementById('submit__form').submit();" class="exit_button">ВЫХОД</a></form>
+        </div>
+    </main>
+
+    <!-- <%- include inc/footer.ejs%> -->

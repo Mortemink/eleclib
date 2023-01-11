@@ -147,6 +147,17 @@ function checkAuthenticated(req, res, next) {
     res.redirect('/login')
 }
 
+app.get('/profile', checkAuthenticated, async(req, res) => {
+    res.render ('profile.ejs', {
+        user: await req.user || false
+    }) 
+})
+
+
+app.post('/profile', checkAuthenticated, (req, res) => {
+    res.render('profile.ejs')
+})
+
 function checkNotAuthenticated(req, res, next) {
     if (req.isAuthenticated()) {
         return res.redirect('/')
