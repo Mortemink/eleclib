@@ -147,6 +147,11 @@ function checkAuthenticated(req, res, next) {
     res.redirect('/login')
 }
 
+app.get('/book_page', (req, res) => {
+    res.render('book_page.ejs')
+})
+
+
 app.get('/profile', checkAuthenticated, async(req, res) => {
     res.render ('profile.ejs', {
         user: await req.user || false
