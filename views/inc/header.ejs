@@ -45,16 +45,15 @@
                         </li>
                         <li class="header__link-blog"><a href="/new">НОВИНКИ</a></li>
                         <li class="header__link-blog"><a href="/popular">ПОПУЛЯРНОЕ</a></li>
-                        <% try{%>
-                        <% if (user){%>
-                        <li class="header__link-blog"><a href="/profile">ЛИЧНЫЙ КАБИНЕТ</a></li>
-
-                        <%} else{%>
-                        <li class="header__link-blog"><a href="/login">АВТОРИЗАЦИЯ</a></li>
-                        <%}%>
-                        <%} catch{%>
+                        <% try { %>
+                            <% if (user) { %>
+                            <li class="header__link-blog"><a href="/profile">ЛИЧНЫЙ КАБИНЕТ</a></li>
+                            <% } else { %>
                             <li class="header__link-blog"><a href="/login">АВТОРИЗАЦИЯ</a></li>
-                        <%}%>
+                            <% } %>
+                        <% } catch (e) { %>
+                            <li class="header__link-blog"><a href="/login">АВТОРИЗАЦИЯ</a></li>
+                        <% } %>
                     </ul>
                 </nav>
             </div>

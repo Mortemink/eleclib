@@ -1,4 +1,5 @@
-<%- include inc/header.ejs%>
+<%- include('inc/header.ejs') %>
+
     <main class="main_block">
         <div class="profile_block">
             <div class="user_info">
@@ -12,17 +13,17 @@
             <div class="user_info_add">
                 <div class="namming" align="left">
                     <p>Email</p>
-                    <p>Телефон</p>
-                    <p>Имя</p>
+<!--                    <p>Телефон</p>-->
+<!--                    <p>Имя</p>-->
                     <p>Логин</p>
-                    <p>Подписка</p>
+<!--                    <p>Подписка</p>-->
                 </div>
                 <div class="namming_info" align="right">
-                    <p>White1ynx@gmail.com</p>
-                    <p>874583475</p>
-                    <p>Даниил Елистратов</p>
-                    <p>White1ynx</p>
-                    <p>Prime</p>
+                    <p><%= user.email %></p>
+<!--                    <p>874583475</p>-->
+<!--                    <p>Даниил Елистратов</p>-->
+                    <p><%= user.login %></p>
+<!--                    <p>Prime</p>-->
                 </div>
             </div>
             <form action="/logout?_method=DELETE" method="POST" id="submit__form"><a
@@ -30,4 +31,4 @@
         </div>
     </main>
 
-    <!-- <%- include inc/footer.ejs%> -->
+    <!-- <%- include('inc/footer.ejs') %> -->

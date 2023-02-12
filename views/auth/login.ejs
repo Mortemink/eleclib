@@ -1,12 +1,18 @@
-<%- include ../inc/header.ejs%>
+<%- include('../inc/header.ejs') %>
 
 
     <div class="login__bg">
         <div class="login__block">
             <form action="/login" method="POST">
-        <% if (messages.error) { %>
-        <%= messages.error %>
-        <% } %>
+                <% try { %>
+                    <% if (messages.error) { %>
+                        <%= messages.error %>
+                    <% } %>
+                <% } catch (e) {} %>
+
+                <% if (registrationMessage) { %>
+                    <%= registrationMessage %>
+                <% } %>
                     <input class="login-form" type="login" id="login" name="login" placeholder="Введите логин" required>
                     
                     <input class="login-form" type="password" id="password" name="password" placeholder="Введите пароль" required>
@@ -16,4 +22,4 @@
         </div>
     </div>
 
-    <%- include ../inc/footer.ejs%>
+<%- include('../inc/footer.ejs') %>

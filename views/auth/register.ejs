@@ -1,8 +1,11 @@
-<%- include ../inc/header.ejs%>
+<%- include('../inc/header.ejs') %>
 
     <div class="register__bg">
         <div class="register__block">
             <form action="/register" method="POST">
+                <% if (message) { %>
+                    <%= message %>
+                <% } %>
                     <input class="register-form" type="login" id="login" name="login" placeholder="Введите логин" required>
                     <input class="register-form" type="email" id="email" name="email" placeholder="Введите почту" required>
                     <input class="register-form" type="password" id="password" name="password" placeholder="Введите пароль" required>
@@ -11,4 +14,4 @@
         </div>
     </div>
 
-    <%- include ../inc/footer.ejs%>
+<%- include('../inc/footer.ejs') %>
