@@ -1,0 +1,57 @@
+<%- include('inc/header.ejs') %>
+
+    <div class="popUp_bg" id="popupBG" onclick="popupclose()"></div>
+    <div class="popUp_add " id="popup">
+        <p class="close" onclick="popupclose()">X</p>
+        <div class="add_img">
+            <p>Добавить изображение(400х500)</p>
+        </div>
+        <input placeholder="Название">
+        <input placeholder="Автор">
+        <input placeholder="Возрастной рейтинг">
+        <input placeholder="Дата выхода">
+        <div class="textareas">
+            <textarea class="discriptionAdd" placeholder="О книге"></textarea>
+            <textarea class="discriptionAdd" placeholder="Рецензия"></textarea>
+        </div>
+        <button class="add" onclick="popupclose()">Добавить</button>
+    </div>
+    <div class="list">
+        <div class="add" onclick="popupOpen()">
+            <p>Добавить</p>
+        </div>
+        <div class="colon_name">
+            <p style="width: 55%;">Название</p>
+            <p style="width: 15%; text-align: end;">Автор</p>
+            <p style="width: 15%; text-align: end;">Дата добавления</p>
+        </div>
+        <div class="item">
+            <p class="Book_name">гари потер</p>
+            <p class="author"> Ролинг джон </p>
+            <p class="adding_date">22.22.22</p>
+
+        </div>
+        <div class="item">
+            <p style="color: #e7a83c; font-size: 22px;"></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="item">
+            <p style="color: #e7a83c; font-size: 22px;"></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="item">
+            <p style="color: #e7a83c; font-size: 22px;"></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="item">
+            <p style="color: #e7a83c; font-size: 22px;"></p>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+
+
+    <!-- <%- include('inc/footer.ejs') %> -->

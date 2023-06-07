@@ -118,14 +118,6 @@ function checkAuthenticated(req, res, next) {
     res.redirect('/login')
 }
 
-app.delete('/logout', checkAuthenticated, (req, res) => {
-    req.logOut(null, (err) => {
-        if (err) {
-            console.error(err);
-        }
-        res.redirect('/');
-    });
-})
 
 app.get('/profile', checkAuthenticated, async (req, res) => {
     res.render('profile.ejs', {
@@ -142,6 +134,25 @@ app.post('/profile', checkAuthenticated, async (req, res) => {
         user
     })
 })
+
+
+app.delete('/logout', checkAuthenticated, (req, res) => {
+    req.logOut(null, (err) => {
+        if (err) {
+            console.error(err);
+        }
+        res.redirect('/');
+    });
+})
+
+
+app.get('/admin', async (req, res) => {
+    res.render('admin.ejs', {
+        user: await req.user || false
+    })
+})
+
+
 
 
 function checkNotAuthenticated(req, res, next) {
