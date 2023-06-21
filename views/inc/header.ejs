@@ -55,7 +55,9 @@
                         <% } catch (e) { %>
                             <li class="header__link-blog"><a href="/login">АВТОРИЗАЦИЯ</a></li>
                         <% } %>
+                        <% if (user !== false && user.accountType >= 1) { %>
                         <li class="header__link-blog"><a href="/admin">АДМИН ПАНЕЛЬ</a></li>
+                        <% } %>
                     </ul>
                 </nav>
             </div>

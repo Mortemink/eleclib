@@ -105,8 +105,10 @@ app.get('/popular', async (req, res) => {
     })
 })
 
-app.get('/book_page', (req, res) => {
-    res.render('book_page.ejs')
+app.get('/book_page', async (req, res) => {
+    res.render('book_page.ejs', {
+        user: await req.user || false
+    })
 })
 
 
@@ -167,7 +169,7 @@ app.route('/login')
         try {
             const registrationMessage = await req.query.status === 'successful_register' ? 'Регистрация выполнена успешно!' : false;
             res.render('auth/login.ejs', {
-                registrationMessage
+                user: false, registrationMessage
             })
         } catch (e) {
             console.error(e)
@@ -189,7 +191,7 @@ app.route('/register')
                 message = 'Произошла неизвестная ошибка.'
             }
             res.render('auth/register.ejs', {
-                message
+                user: false, message
             })
         }
         catch {
