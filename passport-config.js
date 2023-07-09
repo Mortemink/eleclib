@@ -16,8 +16,7 @@ function initialize(passport, getUserByLogin, getUserById) {
             }
         } catch (e) {
             return done(e);
-        }
-        
+        }  
     }
 
     passport.use(new LocalStrategy({ usernameField: 'login' }, authenticateUser))
